@@ -1,7 +1,9 @@
-# In-memory "database"
-
-todos = []       # will hold dicts like {"id": 1, "title": "...", "completed": False}
-users = []       # will hold dicts like {"username": "...", "hashed_password": "..."}
-
-# Simple counter to auto-generate unique todo IDs
+todos = []
+users = []
 todo_id_counter = 1
+
+def get_next_id():
+    global todo_id_counter
+    current = todo_id_counter
+    todo_id_counter += 1
+    return current
