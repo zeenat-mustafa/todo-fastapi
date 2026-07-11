@@ -81,4 +81,3 @@ All endpoints were tested using Swagger UI and Postman. Screenshots of responses
 
 ## Author
 Zeenat Mustafa
-```
